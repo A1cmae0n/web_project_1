@@ -21,7 +21,7 @@ nav {
   /* Add flex properties here */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
+  justify-content: space-between;
   align-items: normal;
   padding-right: 10px;
 }
@@ -133,8 +133,8 @@ nav {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  row-gap: 40px;  
-  list-style-type: none; 
+  row-gap: 40px;
+  list-style-type: none;
   margin: 0 auto;
   margin-top: 68px;
   padding-left: 0;
@@ -296,7 +296,7 @@ nav {
 
 .person_name_cannon {
   /* Use correct values of top/right/bottom/left properties to position the element */
-  right: 216px;;
+  right: 216px;
   bottom: 18px;
 }
 
