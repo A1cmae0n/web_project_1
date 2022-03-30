@@ -1,8 +1,41 @@
+/* minimal css reset from digital ocean */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  color: #000000;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* end reset */
+
 /* Add your class here */
+
 .page {
+  margin: 0 auto;
   min-width: 1100px;
   max-width: 1600px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Helvetica-Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -17,13 +50,11 @@
   box-sizing: border-box;
 }
 
-nav {
+.nav {
   /* Add flex properties here */
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: normal;
-  padding-right: 10px;
 }
 
 .logo {
@@ -104,7 +135,7 @@ nav {
   color: #838383;
 }
 
-#staff {
+.staff {
   padding-top: 100px;
   padding-bottom: 140px;
   background-color: #f2f2f2;
@@ -179,7 +210,7 @@ nav {
   margin-top: auto;
 }
 
-#events {
+.events {
   padding: 100px 0 120px 80px;
   display: flex;
   flex-direction: row;
@@ -251,9 +282,9 @@ nav {
 }
 
 .events__more:hover {
-
-}
 /* Add the hover state styles for .events__more here */
+  color: #1f69c9;
+}
 
 .events__cover {
   /* flex-grow: 1;
@@ -285,7 +316,7 @@ nav {
 .person_name_feynman {
   /* Use correct values of top/right/bottom/left properties to position the element */
   left: 319px;
-  top: 30px;
+  top: -30px;
 }
 
 .person_name_burbidge {
@@ -334,7 +365,7 @@ nav {
   margin: 0;
 }
 
-#membership {
+.membership {
   padding-top: 100px;
   padding-bottom: 140px;
   background-color: #f2f2f2;
@@ -362,7 +393,7 @@ nav {
 
 .step {
   /* Add styles */
-  flex-basis: 240px;
+  flex-basis: 220px;
 }
 
 /* display: flex;
@@ -389,7 +420,7 @@ justify-content: space-between;   */
   margin: 10px 0 0;
 }
 
-#about {
+.about {
   padding: 100px 80px;
   background-color: #1f1f1f;
   color: #fff;
@@ -406,6 +437,7 @@ justify-content: space-between;   */
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  color: #FFFFFF;
 }
 
 .about__content {
@@ -416,11 +448,13 @@ justify-content: space-between;   */
   display: flex;
   flex-direction: column;
   row-gap: 32px;
+
 }
 
 .about__paragraph {
   margin: 0;
   z-index: 1;
+  color: #FFFFFF;
 }
 
 .about__circle {
@@ -430,14 +464,14 @@ justify-content: space-between;   */
   border-radius: 50%;
   position: absolute;
   left: -91px;
-  top: -123px;
+  top: -121px;
 }
 
-footer {
+.footer {
   box-sizing: border-box;
-  background-color: black;
+  background-color: #1f1f1f;
   padding: 60px 102px 60px 80px;
-  color: white;
+  color: #FFFFFF;
 }
 
 .footer__columns {
@@ -451,6 +485,7 @@ footer {
 }
 
 .footer__column_content_social {
+
 }
 
 .footer__logo {
@@ -463,29 +498,35 @@ footer {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  color: #FFFFFF;
 }
 
 .footer__list-item {
+  margin-top: 16px;
 }
 
 .footer__column-heading {
+    margin-bottom: 20px;
+    color: #FFFFFF; 
 }
 
 .footer__column-link {
-  color: white;
+  color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
 }
 
-.footer__column-link:visited {
+.footer__column-link:hover {
   color: #c1c1c1;
 }
 
 .footer__social-icon {
   height: 16px;
   width: 16px;
+  margin-right: 10px;
 }
 
-.footer__copyright {
+.footer__copyright-paragraph {
+  color: #FFFFFF;
 }
