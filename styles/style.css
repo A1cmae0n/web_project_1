@@ -1,34 +1,3 @@
-/* minimal css reset from digital ocean */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul, div {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-  color: #000000;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* end reset */
-
 /* Add your class here */
 
 .page {
@@ -48,6 +17,8 @@ img {
   padding-right: 80px;
   position: relative;
   box-sizing: border-box;
+
+  
 }
 
 .nav {
@@ -61,6 +32,7 @@ img {
   width: 196px;
   height: 60px;
 }
+
 
 .nav__links {
   list-style: none;
@@ -515,6 +487,10 @@ justify-content: space-between;   */
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  /* vertically center the social media icons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__column-link:hover {
@@ -527,6 +503,6 @@ justify-content: space-between;   */
   margin-right: 10px;
 }
 
-.footer__copyright-paragraph {
+.footer__copyright {
   color: #FFFFFF;
 }
