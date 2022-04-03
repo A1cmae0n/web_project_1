@@ -505,4 +505,5 @@ justify-content: space-between;   */
 
 .footer__copyright {
   color: #FFFFFF;
+  margin: unset;
 }
